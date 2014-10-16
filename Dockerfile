@@ -9,8 +9,8 @@ FROM dockerfile/nodejs-bower-gulp
 # File Author / Maintainer
 MAINTAINER Paul Mead
 
-# Fix DNS
-RUN sudo dpkg-reconfigure -f noninteractive tzdata
+# Fix DNS - doesn't seem to work
+# RUN sudo dpkg-reconfigure -f noninteractive resolvconf
 
 # Update the repository sources list
 RUN apt-get update
