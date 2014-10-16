@@ -10,7 +10,7 @@ FROM dockerfile/nodejs-bower-gulp
 MAINTAINER Paul Mead
 
 # Fix DNS
-sudo dpkg-reconfigure resolvconf
+sudo dpkg-reconfigure -f noninteractive tzdata
 
 # Update the repository sources list
 RUN apt-get update
