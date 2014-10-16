@@ -9,6 +9,9 @@ FROM dockerfile/nodejs-bower-gulp
 # File Author / Maintainer
 MAINTAINER Paul Mead
 
+# Fix DNS
+sudo dpkg-reconfigure resolvconf
+
 # Update the repository sources list
 RUN apt-get update
 
