@@ -17,8 +17,8 @@ RUN apt-get update
 
 ################## BEGIN INSTALLATION ######################
 # Install CSSmin
-# Ref: https://github.com/gruntjs/grunt-contrib-cssmin
+# Ref: https://www.npmjs.org/package/gulp-cssmin
 
 # Install cssmin via npm
-RUN npm install grunt-contrib-cssmin --save-dev
+RUN npm install gulp-cssmin --save-dev
 
